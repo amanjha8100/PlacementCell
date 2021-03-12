@@ -1,3 +1,0 @@
-gspread
-flask
-oauth2client
