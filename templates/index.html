@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Placement Cell JGEC</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="static/css/stylebase.css">
+    </head>
+    <body>
+        <table>
+            <caption>Job/Intern Openings</caption>
+            <thead>
+              <tr>
+                  {% for fr in firstrow %}
+                <th scope="col">{{fr}}</th>
+                {% endfor %}
+                <!--<th scope="col">Account</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Period</th>-->
+              </tr>
+            </thead>
+            <tbody>
+                {% for sd in sheets_data %}
+                    <tr>
+                        <td >{{sd['COMPANY']}}</td>
+                        <td>{{sd['ELIGIBILITY']}}</td>
+                        <td >{{sd['HIRING MONTHS']}}</td>
+                        <td >{{sd['LINKS']}}</td>
+                    </tr>
+                {% endfor %}
+              
+            </tbody>
+          </table>
+          <div class="made-with-love">
+            Made with
+            <i>♥</i> by
+            <a target="_blank" href="https://github.com/amanjha8100">Aman Prakash Jha</a>
+          </div>
+    </body>
+</html>
