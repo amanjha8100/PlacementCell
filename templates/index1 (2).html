@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Placement Cell JGEC</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="static/css/stylebase.css">
+    </head>
+    <body>
+        
+        <div class="card mb-3">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                      
+                    <tr>
+                        {% for fr in firstrow %}
+                        <th>{{fr}}</th>
+                        <!--<th>Course</th>-->
+                        <!--<th></th>-->
+                        {% endfor %}
+                    </tr>
+                    
+                  </thead>
+                  <tbody>
+                    {% for sd in sheets_data %}
+                    <tr>
+                        {% for s in sd %}
+                        <td>{{ s }}</td>
+                        {% endfor %}
+                        <!--<td></td>-->
+                       <!--<td>
+                            
+                          <a class="btn btn-primary" href="" role="button">Enter Attendance</a>
+                          <a class="btn btn-warning" href="#">Extra Class</a>
+                          <a class="btn btn-danger" href="#">View Students</a>
+
+                        </td>-->
+                    </tr>
+                    {% endfor %}
+                    
+
+                  </tbody>
+                </table>
+              </div>
+    </div>
+          <div class="made-with-love">
+            Made with
+            <i>♥</i> by
+            <a target="_blank" href="https://github.com/amanjha8100">Aman Prakash Jha</a>
+          </div>
+    </body>
+</html>
