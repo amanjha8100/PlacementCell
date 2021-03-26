@@ -1,0 +1,7 @@
+caption.override {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #000;
+    text-align: center;
+    caption-side: top;
+}
