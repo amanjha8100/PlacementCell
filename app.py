@@ -17,35 +17,58 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('creds.json', sco
 gc = gspread.authorize(credentials)
 
 sheets_url = "https://docs.google.com/spreadsheets/d/16ef17dVYRxvjfEyHwX9aIRZ0Ir3KnLEr3XRD04nf-Zk/edit?usp=sharing"
+my_file = gc.open_by_url(sheets_url)
 
+#testing
+print(my_file.worksheets())
 
 #print(sheets_data)
-def row(any_url):
-    my_file = gc.open_by_url(any_url)
-    my_sheet = my_file.sheet1
-    firstrow = my_sheet.row_values(1)
-    return firstrow
+#printing first rows
+def rowjob():
+    my_sheetjob = my_file.sheet1
+    firstrowjob = my_sheetjob.row_values(1)
+    return firstrowjob
 
-def sheetify(any_url):
-    my_file = gc.open_by_url(any_url)
-    my_sheet = my_file.sheet1
+def rowintern():
+    my_sheetintern = my_file.get_worksheet(1)
+    firstrowintern = my_sheetintern.row_values(1)
+    return firstrowintern
+
+def rowhack():
+    my_sheethack = my_file.get_worksheet(2)
+    firstrowhack = my_sheethack.row_values(1)
+    return firstrowhack
+
+#printing sheet stuff    
+def sheetifyjob():
+    my_sheetjob = my_file.sheet1
     #list_val = my_sheet.get_all_values()
     #print(list_val)
     #sheets_data = my_sheet.acell('A1').value
-    sheets_data = my_sheet.get_all_records()
-    return sheets_data
+    sheets_data_job = my_sheetjob.get_all_records()
+    return sheets_data_job
 
-def aise(any_url):
-    my_file = gc.open_by_url(any_url)
-    my_sheet = my_file.sheet1
-    data = my_sheet.get_all_records()
-    return data
+def sheetifyintern():
+    my_sheetintern = my_file.get_worksheet(1)
+    sheets_data_intern = my_sheetintern.get_all_records()
+    return sheets_data_intern
 
+def sheetifyhack():
+    my_sheethack = my_file.get_worksheet(2)
+    sheets_data_hack = my_sheethack.get_all_records()
+    return sheets_data_hack
 
 @app.route('/')
 def home():
-    return render_template('index.html',sheets_data=sheetify(sheets_url),firstrow=row(sheets_url))
+    return render_template('index.html',sheets_data=sheetifyjob(),firstrow=rowjob())
 
+@app.route('/intern')
+def inter():
+    return render_template('intern.html',sheets_data=sheetifyintern(),firstrow=rowintern())
+
+@app.route('/hackathon')
+def hack():
+    return render_template('hack.html',sheets_data=sheetifyhack(),firstrow=rowhack())
 
 
 if __name__ == '__main__':
