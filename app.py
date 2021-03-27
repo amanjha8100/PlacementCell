@@ -13,11 +13,17 @@ app.secret_key='placementcell'
 scope = ['https://www.googleapis.com/auth/spreadsheets',
     'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('creds.json', scope)
-gc = gspread.authorize(credentials)
+credentialsjobs = ServiceAccountCredentials.from_json_keyfile_name('creds.json', scope)
+gc = gspread.authorize(credentialsjobs)
 
-sheets_url = "https://docs.google.com/spreadsheets/d/16ef17dVYRxvjfEyHwX9aIRZ0Ir3KnLEr3XRD04nf-Zk/edit?usp=sharing"
-my_file = gc.open_by_url(sheets_url)
+sheets_urljobs = "https://docs.google.com/spreadsheets/d/16ef17dVYRxvjfEyHwX9aIRZ0Ir3KnLEr3XRD04nf-Zk/edit?usp=sharing"
+my_file = gc.open_by_url(sheets_urljobs)
+#internships
+sheets_urlinterns = "https://docs.google.com/spreadsheets/d/1YX8BGwMGhMackvePs8Us51oPEN_kCV6IodncW1Ddd3c/edit#gid=0"
+my_fileinterns = gc.open_by_url(sheets_urlinterns)
+#hackathons
+sheets_urlhack = "https://docs.google.com/spreadsheets/d/1lyugxQCGcmuTMckNyRtffdJylpcs1QL78VCoU7WhkR8/edit#gid=0"
+my_filehack = gc.open_by_url(sheets_urlhack)
 
 #testing
 print(my_file.worksheets())
@@ -30,12 +36,12 @@ def rowjob():
     return firstrowjob
 
 def rowintern():
-    my_sheetintern = my_file.get_worksheet(1)
+    my_sheetintern = my_fileinterns.sheet1
     firstrowintern = my_sheetintern.row_values(1)
     return firstrowintern
 
 def rowhack():
-    my_sheethack = my_file.get_worksheet(2)
+    my_sheethack = my_filehack.sheet1
     firstrowhack = my_sheethack.row_values(1)
     return firstrowhack
 
@@ -49,12 +55,12 @@ def sheetifyjob():
     return sheets_data_job
 
 def sheetifyintern():
-    my_sheetintern = my_file.get_worksheet(1)
+    my_sheetintern = my_fileinterns.sheet1
     sheets_data_intern = my_sheetintern.get_all_records()
     return sheets_data_intern
 
 def sheetifyhack():
-    my_sheethack = my_file.get_worksheet(2)
+    my_sheethack = my_filehack.sheet1
     sheets_data_hack = my_sheethack.get_all_records()
     return sheets_data_hack
 
