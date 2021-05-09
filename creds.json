@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "placement-cell-api-307413",
+  "private_key_id": "2f8fcee2d889bfb094dfbc7453bd3092bc7f32a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDe1ThURhLd8znx\nFJ0gMuwLDR36qCg8J83LKc+5zAhmAsZSJe8jAkbVWc4t075+jypcGKRBwRlDgQA7\nf45yoHSPHKNtJ46XW18JvfReYhIBS4E7SSwebZ8WM5oNkJ/HKdXiAE2se6wazNzl\naY9uAtNAWLatMPsoDVKO/sOmCKhU19lIjYRWpxZm6NqFJ/tFS+8Q8apF74tPmIpf\nfEmmx4DywpIkdGV8wgYk9PcFKI3ha5q6ic/9ctBzN5B3s+WGI3XsVVzsaWys5kLg\nCt7Scwr5yLMBcK3jFeEFFpEacpa2j1v8CiiZF6cwC4W3OQA7dSyLKs9Gfphjurgj\nQSyp/jb9AgMBAAECggEAODH+aCZZ2LZfnOAtdfLRm0HeFxn0N6N0HzG2rKz7SzqU\n6B+f7KzEz0Y8HEuDhWg2bw5Z0ilP5TmxpM+YzWiQrIy03DC3IY2N7KeGao0B7Git\nuRVNdoj/rzopNhWMbc4rnbik3gQ8VW/nn0VdQgmdW+Njgk7Rb/rYIK64CXWyed6S\n4kGhZEFi2C6tZsNwSnM4WFjfiata135/Pi94DyhWMtmZdANngaCkxpp1kS/57WcH\ncNMcp03uH3/r3SdJSa9Mztl+Bx9+bXx7HOpnYo+s9mfjCC6Tkn0MH9VuDQUHJFt2\nvRRHQEoT2EFtO2tOhPtgFcJk1WyqHpy82dyAvOuHQwKBgQD4ewvgB2Zq/mumleFV\nKXo52wISMbSm3g0FDB2D3FUjP6xu+cNo5+SnH/vQSFv624k2zOh0oDXRgEwAUDVV\nkVe5dft5VKVZH4KDyYkjbn4JsKmoFuDYf5lgqcWLD8ZqW8PUOKHakFOUplJUHjGB\n3fMFCQe2Cq8pI+7iWHmegNCNwwKBgQDlk3uvE5FiCLvRNOE5TjinNRCsXpCmHeW4\nIrcE8lVZVh9jNqLGXkshTlurKUsiygTLai3iXOF2eTRLntxR9+ZsprRFbe/HXE4r\nEsv7s+WF53CqJz9U32I41CvT50svLO3yNo4OEeo+agM1sHjGnF2jHnC40LmMJeR8\nqjkjF44cPwKBgQC+3KUOfCCrZqoB13ayF54O+q7oks2Ur1OI4Pl6469x1+L3i1oS\nJq13whWGs04TrrYDJfoYO0ebmNTIGNQe2flsN7fmRqKLhqyV1iRE1wZxIwXuW0Ry\nh/CkU0OtwXxDDiGpzaZlYB8TO35ZpqeYfYfCAmGt7x8EltlTe2pP2dpYSQKBgQDO\nzn3DqC/2DQIMIsOk2McGMTJU5FcPna0bpAIUraye7osV19joM3cgiLLhTDCIJU4O\nZBbzbFIaZHLskC3OlS94vu9z/+XZRFiSSruAgX0IlAWU8ggGD7kukkrs99VtqN6s\nq+Jp4E+Qa/V6Pv99gsyDLd/DTRtomZXri3gvGYAGBwKBgF4pmM0JDpyxdsjEsAbL\nAGi7zskYacL1DRga20N6aMW+1l9UZp5oFwH6hGPeQaOCVNa2F96hSsCbe1IMmqpc\ncq1qrmHimvr1QABzFfsT8EK1NXMJw+2y3kikcRyOH3xzTn92MTYDdgVIjrIxDqEG\n+eGdY5Q0AYqgSEx5VXa75Awn\n-----END PRIVATE KEY-----\n",
+  "client_email": "placementcellapi@placement-cell-api-307413.iam.gserviceaccount.com",
+  "client_id": "114240993762329289295",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/placementcellapi%40placement-cell-api-307413.iam.gserviceaccount.com"
+}
